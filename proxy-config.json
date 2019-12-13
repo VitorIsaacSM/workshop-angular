@@ -1,0 +1,9 @@
+{
+    "/api": {
+        "target": "https://angular-todo-list-app.herokuapp.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/api" : "https://angular-todo-list-app.herokuapp.com/api"}
+    }
+}

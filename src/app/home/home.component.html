@@ -1,0 +1,9 @@
+<div class="tarefas">
+    <h1>Lista de tarefas</h1>
+    <div *ngFor="let tarefa of tarefas" class="m-3 p-2 bg-primary text-white">
+        <p>Titulo: {{tarefa.title}}</p>
+        <p>Descrição: {{tarefa.description}}</p>
+        <p>{{tarefa.isDone ? 'Concluido' : 'Não concluido'}}</p>
+        <p>Limite: {{tarefa.limit | date:'dd/MM/yyyy'}}</p>
+    </div>
+</div>

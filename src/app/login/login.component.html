@@ -1,0 +1,16 @@
+<form class="login form-group" [formGroup]="form">
+    <div class="mb-3">
+        <p>username:</p>
+        <input formControlName="username" class="form-control mb-1" type="text">
+        <span *ngIf="isUsernameValid()" class="text-danger">Digite o nome de usuario</span>
+    </div>
+
+    <div class="mb-3">
+        <p>senha:</p>
+        <input formControlName="senha" class="form-control mb-1" type="password">
+        <span *ngIf="isSenhaInvalid()" class="text-danger">Digite uma senha</span>
+    </div>
+
+    <span *ngIf="senhaInvalida" class="text-danger">Usuario ou senha invalidos</span>
+    <button class="btn btn-primary w-100" (click)="login()">Login</button>
+</form>
